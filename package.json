@@ -1,0 +1,28 @@
+{
+  "name": "fbyt-vault-inspector",
+  "version": "0.1.0",
+  "description": "Read-only CLI that decodes FBYT vaults, investors, protocol config and transactions straight from Solana mainnet using the program's Anchor IDL.",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "fbyt": "./dist/cli.js"
+  },
+  "scripts": {
+    "fbyt": "tsx src/cli.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.31.1",
+    "@solana/web3.js": "^1.98.0",
+    "bs58": "^6.0.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.6",
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
